@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Список дел</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles/mainStyles.css">
+	<link rel="stylesheet" type="text/css" href="styles/formStyles.css">
+	<link rel="stylesheet" type="text/css" href="styles/itemStyles.css">
+	<script src="js/jquery-3.5.0.min.js"></script>
+	<script src="js/sript.js"></script>
+</head>
+<body>
+	<div class="fixed-container clearfix">
+		<div class="column-left">
+			<div class="column-left_header">
+				<h1>Список дел:</h1>
+			</div>
+			<h2 class="list-empty">Список пуст...</h2>
+			<div class="items-list">
+				
+			</div>				
+		</div>
+		<div class="column-right">
+			<div class="column-right_header">
+				<h1>Добавить новое дело</h1>
+			</div>
+			<form method="POST" class="column-right_form">
+				<h2>* Название</h2>
+				<textarea name="designation" class="form-designation"></textarea>
+				<h2>* Описание</h2>
+				<textarea name="description" class="form-description"></textarea>
+				<button class="form-append"><span class="form-append_text">Добавить дело</span></button>			
+			</form>
+		</div>
+	</div>
+</body>
+</html>
