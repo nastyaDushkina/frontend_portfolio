@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>#marathon_5</title>
+	<link rel="stylesheet" href="css/_fonts.css">
+	<link rel="stylesheet" href="css/_global.css">
+	<link rel="stylesheet" href="css/_overall.css">
+	<link rel="stylesheet" href="css/marathon_5.css">
+	<script> </script>
+</head>
+<body>
+	<div class="site-container">
+		<header class="header">
+		<div class="container header_container flex">
+			<nav class="header_inf">
+				<ul class="information">
+					<li class="inf_item">
+						<a href="#" class="inf_link">About</a>
+					</li>
+					<li class="inf_item">
+						<a href="#" class="inf_link">Contact</a>
+					</li>
+				</ul>
+			</nav>
+			<a href="#" class="header_logo logo">Camping.</a>
+			<nav class="header_move">				
+				<ul class=" move">
+					<li class="move_item">
+						<a href="#" class="move_link">Sing in</a>
+					</li>
+					<li class="move_item">
+						<a href="#" class="move_link">Sing up</a>
+					</li>
+					<li class="move_item">
+						<button type="button" class="search-btn btn-reset" name="search"></button>
+					</li>
+				</ul>
+			</nav>			
+		</div>
+		</header>	
+		<main class="main">
+			<section class="first">				
+				<div class="container first_container">
+					<h1 class="first_title">Beatiful Places of England</h1>
+					<p class="first_descr">Plan your vacation on the most beatiful places of England</p>
+					<div class="first_slider main-slider">					
+						<div class="swiper-information">						
+							<a href="https://yandex.ru/" target="_blank" class="inf-next">Up next</a>
+							<h2 class="inf-title"><a href="https://skillbox.ru/" target="_blank">Aerial View of Rock Cliffs</a></h2>						
+						</div>					
+					</div>
+					<div class="first_bottom">
+						<form action="https://jsonplaceholder.typicode.com/posts" id="book" class="first_form search-form" method="post" enctype="application/x-www-form-urlencoded">
+							<fieldset>
+								<legend><h3 class="form-name">Book your vacation</h3></legend>
+								<div class="form-wrapper">
+									
+										<label class="form-input input-1 input-bg select">
+											Accommodation
+											<input class="input-contain" type="text" placeholder="6730 Luna Land North Rhiannonmouth" name="accommodation" required>
+										</label>
+										<label class="form-input input-2 input-bg">
+											Check-in
+											<input class="input-contain" type="text" placeholder="19.06.2019" name="check-in" required>
+										</label>
+										<label class="form-input input-3">
+											Check-out
+											<input class="input-contain" type="text" placeholder="19.06.2019" name="check-out" required>
+										</label>
+										<label class="form-input input-4 input-bg select">
+											Guests
+											<input class="input-contain" type="text" placeholder="4 adults" name="guests" required>
+										</label>
+										<button type="submit" class="form-btn btn-reset" name="search stories">Search</button>				
+								</div>
+							</fieldset>
+						</form>						
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+</body>
+</html>
