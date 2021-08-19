@@ -1,0 +1,100 @@
+html {
+  box-sizing: border-box;
+}
+/*назначение размеров основного родителя
+(размер элемнта включает отступы и бордер)*/
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+/*задание свойств всем элементам на странице
+(размер элентом наследуется от основного родителя,
+ обнуляются отступы*/
+
+body {
+  min-width: 1200px; /*меньше ширины 1200px появляется горизонтальная полоса прокрутки*/
+  margin: 0;
+
+  color: var(--black-shadow);
+  background-color: var(--white-shadow);
+
+  font-family: 'Muller', 'Helvetica', sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+a {
+  text-decoration: none;
+
+  color: inherit;
+}
+/*сброс стилей ссылок*/
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+  padding: 0;
+}
+
+.p-reset {
+	margin: 0;
+  padding: 0;
+}
+
+.list-reset {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.input-reset {
+	border: 0;
+  outline: 0;
+}
+
+.textarea-reset {
+	border: 0;
+  outline: 0;
+}
+
+.fieldset-reset {
+	margin: 0;
+	padding: 0;
+
+	border: 0;
+}
+/*сброс стилей формы*/
+
+.btn-reset {
+	padding: 0;
+
+	cursor: pointer;
+
+	border: none;
+}
+/*сброс стилей кнопок*/
+
+.address-reset {
+  font-style: normal;
+}
+
+.visually-hidden {
+	position: absolute !important;
+
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+
+	width: 1px !important;
+	height: 1px !important;
+	padding:0 !important;
+
+	border:0 !important;
+}
+/*стили, позволяющие доступно скрыть заголовок*/
+
+.content-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+/*стили контейнера-центровщика*/
+

@@ -1,0 +1,198 @@
+.header {
+  margin-bottom: 70px;
+  padding-top: 30px;
+}
+
+.header-top {
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.header-bottom {
+  overflow: hidden;
+  align-items: center;
+
+  min-height: 70px;
+  padding-right: 21px;
+/*жёстко заданная высота элемента при увеличении количества текста в нём может стать причиной вываливания текста в нём наружу,
+что может стать причиной перекрытия других элементов. Нужно этого избегать, когда у нас есть блок, содержащий к-л текстовый контент
+или изображения. В таких случаях нужно использовать min-height*/
+
+  border-radius: 12px;
+  background-color: var(--white);
+}
+
+.header-logo {
+  display: block;
+
+  margin-right: 25px;
+}
+
+.header-log-in {
+  position: relative;
+
+  margin-right: 12px;
+  margin-bottom: -3px;
+  padding-left: 17px;
+
+  color: var(--mustard);
+  background-image: url('../img/icons/log-in.png');
+  background-repeat: no-repeat;
+  background-position: center left;
+
+  line-height: 1;
+}
+
+.header-log-in::before {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+
+  width: 0;
+  height: 0.1em;
+
+  content: "";
+  transition: all .1s;
+
+  background: currentColor;
+}
+
+.header-log-in::after {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+
+  width: 0;
+  height: 0.1em;
+
+  content: "";
+  transition: all .1s;
+
+  background: currentColor;
+}
+
+.header-log-in:hover {
+  transition: all .1s;
+}
+
+.header-log-in:hover::before {
+  left: 0;
+
+  width: 50%;
+
+  background: currentColor;
+}
+
+.header-log-in:hover::after {
+  right: 0;
+
+  width: 50%;
+
+  background: currentColor;
+}
+
+.header-tel {
+  margin-right: auto;
+
+  transition: transform .1s linear;
+
+  color: var(--grey);
+
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.header-tel:hover {
+  transition: transform .1s linear;
+  transform: scale(1.05);
+}
+
+.header-menu {
+  align-self: stretch;
+}
+
+.header-menu_list {
+  display: flex;
+
+  height: 100%;
+
+  list-style: none;
+}
+
+.header-menu_list li {
+  align-self: center;
+
+  height: 100%;
+}
+
+.header-menu_link {
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+  padding-right: 23px;
+  padding-left: 23px;
+
+  transition-timing-function: linear;
+  transition-duration: .1s;
+  transition-property: color, background-color;
+
+  border: inherit;
+
+  font-weight: 500;
+}
+
+.header-menu_link:hover {
+  transition-timing-function: linear;
+  transition-duration: .1s;
+  transition-property: color, background-color;
+
+  color: var(--white);
+  background-color: var(--mustard-bg);
+}
+
+.header-search {
+  display: flex;
+  overflow: hidden;
+
+  width: 355px;
+  height: 48px;
+  margin-left: auto;
+
+  border-radius: 15px;
+  background-color: var(--white-shadow);
+}
+
+.header-search_form {
+  width: 540px;
+  padding: 15px 21px;
+
+  cursor: pointer;
+
+  background-color: var(--white-shadow);
+
+  font-size: 14px;
+}
+
+.header-search_btn {
+  align-self: center;
+
+  width: 50px;
+  height: 100%;
+  margin-right: 22px;
+
+  transition: transform .1s linear;
+
+  background-color: transparent;
+  background-image: url('../img/icons/search.svg');
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 84.5%;
+}
+
+.header-search_btn:hover {
+  transition: transform .1s linear;
+  transform: scale(1.2);
+}

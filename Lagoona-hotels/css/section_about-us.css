@@ -1,0 +1,13 @@
+.section_about-us {
+  margin-bottom: 56px;
+}
+
+
+.about-us_text {
+  margin-top: -15px;
+  margin-left: 15px;
+  padding-right: 50px;
+  padding-left: 42px;
+
+  color: var(--grey);
+}

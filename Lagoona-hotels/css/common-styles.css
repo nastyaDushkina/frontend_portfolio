@@ -1,0 +1,102 @@
+.h2 {
+  margin-top: 0;
+  margin-bottom: 22px;
+  margin-left: 42px;
+
+  color: var(--dark-title);
+
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.btn-link {
+  display: block;
+
+  color: var(--mustard);
+  border: 1px solid var(--mustard);
+  border-radius: 12px;
+
+  line-height: 1;
+}
+
+.btn-link:hover {
+  transition: all .3s linear;
+
+  border-top-left-radius: 70% 32%;
+  border-top-right-radius: 0 0;
+  border-bottom-right-radius: 70% 32%;
+  border-bottom-left-radius: 0 0;
+}
+
+.form_input {
+  display: block;
+
+  width: 100%;
+  height: 70px;
+  margin-bottom: 24px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  cursor: pointer;
+
+  border-radius: 12px;
+  background-color: var(--white);
+}
+
+.form_input::placeholder {
+  color: var(--light-grey);
+}
+
+.form_button {
+  margin-right: 28px;
+  padding: 26px 30px;
+
+  transition-timing-function: linear;
+  transition-duration: .1s;
+  transition-property: transform, filter;
+
+  color: var(--white);
+  border-radius: 12px;
+  background-color: var(--mustard);
+
+  font-size: 16px;
+}
+
+.form_button:hover {
+  transition-timing-function: linear;
+  transition-duration: .1s;
+  transition-property: transform, filter;
+  transform: scale(1.09);
+
+  filter: brightness(110%);
+}
+
+.th-contacts {
+  text-align: left;
+}
+
+.link_underlined::before {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+
+  width: 0;
+  height: 0.1em;
+
+  content: "";
+  transition: all .1s;
+
+  background: currentColor;
+}
+
+.link_underlined:hover::before {
+  left: 0;
+
+  width: 100%;
+
+  transition: all .1s;
+
+  background: currentColor;
+}
+

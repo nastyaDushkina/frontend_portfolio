@@ -1,0 +1,43 @@
+/*@font-face позволяет описать каждый используемый пользовательский шрифт. */
+@font-face {
+  font-family: 'Muller'; /*как мы будем обращаться к шрифту в стилях, при назначении его какому-либо элементу html
+  (название семейства шрифтов)*/
+  src: url('../fonts/MullerBold.woff2') format('woff2'),
+    url('../fonts/MullerBold.woff') format('woff'); /*путь, по которому мы сможем найти шрифт (можно загружать извне,
+    тогда в url указывается адрес сервиса). Если шрифт не подгрузится по первому url, будет произведена попытка
+    загрузки шрифта по второму url*/
+  font-display: swap; /*определяет способ загрузки и отображения файлов шрифтов в браузере. swap - пока происходит
+  загрузка пользовательского шрифта текстовый контент на сайте показывается резервным шрифтом. Не происходит FOIT
+  (как в случае со значением  block, зато происходит FOUT.*/
+  font-weight: 700; /*Шрифты каждого отдельного написания представляют собой разные файлы. Чтобы при назначении шрифта
+  какому-либо элементу html было понятно, какой жирности используемый шрифт (какой именно шрифт из семейства),
+  используют данный дескрипшн.*/
+  font-style: normal; /*определяет, каким образом шрифт должен быть стилизирован (курсив, обычный, наклонный).*/
+}
+
+@font-face {
+	font-family: 'Muller';
+	src: url('../fonts/MullerLight.woff2') format('woff2'),
+		url('../fonts/MullerLight.woff') format('woff');
+	font-display: swap;
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Muller';
+	src: url('../fonts/MullerMedium.woff2') format('woff2'),
+		url('../fonts/MullerMedium.woff') format('woff');
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Muller';
+	src: url('../fonts/MullerRegular.woff2') format('woff2'),
+		url('../fonts/MullerRegular.woff') format('woff');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}

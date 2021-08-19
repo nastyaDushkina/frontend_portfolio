@@ -1,0 +1,57 @@
+.section_advantages {
+  margin-bottom: 68px;
+}
+
+.advantages-items {
+  min-height: 275px;
+  padding: 115px 40px 20px 44px;
+  /*padding-и ограничивают содержащийся в родительском элементе
+  контент и не дают ему вылезти за границу родителя*/
+
+  border-radius: 12px;
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-position: 43px 40px;
+  background-size: 23%;
+}
+
+.advantages-items_col:nth-last-child(n + 5) {
+  margin-bottom: 24px;
+}
+
+
+.adv-item_text {
+  color: var(--grey);
+}
+
+.adv-item_bathtub {
+  background-image: url('../img/advantages/bathtub.svg');
+}
+
+.adv-item_hanger {
+  background-image: url('../img/advantages/hanger.svg');
+}
+
+.adv-item_heating {
+  background-image: url('../img/advantages/heating.svg');
+}
+
+.adv-item_hotel-key {
+  background-image: url('../img/advantages/hotel-key.svg');
+}
+
+.adv-item_parking {
+  background-image: url('../img/advantages/parking.svg');
+}
+
+.adv-item_reception {
+  background-image: url('../img/advantages/reception.svg');
+}
+
+.adv-item_security-box {
+  background-image: url('../img/advantages/security-box.svg');
+}
+
+.adv-item_swimming-pool {
+  background-image: url('../img/advantages/swimming-pool.svg');
+}

@@ -1,0 +1,105 @@
+.bottom-section {
+  margin-bottom: 22px;
+}
+
+.section_contacts {
+  margin-right: 150px;
+}
+
+.contacts-field {
+  padding-top: 18px;
+  padding-right: 42px;
+  padding-left: 42px;
+
+  border-radius: 12px;
+  background-color: var(--white);
+
+  font-weight: 500;
+}
+
+.contacts-item {
+  display: flex;
+  align-items: baseline;
+
+  padding-top: 20px;
+  padding-bottom: 22px;
+
+  border-bottom: 1px solid #cccccc;
+}
+
+.contacts-item_name {
+  min-width: 145px;
+
+  color: var(--grey);
+
+  font-size: 22px;
+  font-weight: 600;
+
+}
+
+.contacts-item_content {
+  list-style: none;
+
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.contact-link {
+  position: relative;
+
+  color: var(--mustard);
+
+  font-size: 1em;
+}
+
+.email-text {
+  color: var(--light-grey);
+}
+
+.build-route {
+  margin-bottom: 40px;
+  padding-top: 43px;
+}
+
+.build-route_btn {
+  width: 215px;
+  margin-bottom: 44px;
+  padding: 26px 28px;
+
+  transition: all .1s linear;
+
+  font-weight: 500;
+}
+
+.section_write-us {
+  padding-top: 135px;
+}
+
+.form_write-us {
+  align-self: center;
+
+  width: 340px;
+  margin-right: 180px;
+}
+
+.title_write-us {
+  margin-bottom: 35px;
+  margin-left: 32px;
+}
+
+.write-us_message {
+  height: 110px;
+  margin-bottom: 21px;
+  padding-top: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  resize: none;
+
+  font: inherit;
+}
+
+.btn-send {
+  width: 100%;
+  margin-right: 0;
+}

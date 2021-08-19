@@ -1,0 +1,99 @@
+.footer {
+  display: flex;
+
+  min-height: 338px;
+  margin-bottom: 52px;
+  padding-top: 41px;
+  padding-left: 52px;
+
+  border-radius: 12px;
+  background-color: var(--black-shadow);
+  background-image: url('../img/main/Logo2.png');
+  background-repeat: no-repeat;
+  background-position: 80.6% 100%;
+  background-size: 22.2%;
+}
+/*жёстко заданная высота элемента при увеличении количества текста в нём может стать причиной вываливания текста в нём наружу,
+что может стать причиной перекрытия других элементов. Нужно этого избегать, когда у нас есть блок, содержащий к-л текстовый контент
+или изображения. В таких случаях нужно использовать min-height*/
+
+.footer-link {
+  position: relative;
+
+  display: block;
+
+  width: fit-content;
+
+  color: var(--mustard);
+
+  line-height: 24px;
+}
+
+.footer-inf {
+  width: 300px;
+  margin-right: 123px;
+}
+
+.footer-inf_text {
+  margin-top: 0;
+  margin-bottom: 32px;
+
+  color: var(--white);
+}
+
+.footer-inf_text:nth-child(2) {
+  margin-bottom: 36px;
+}
+
+.footer-contacts {
+  width: 370px;
+  margin-right: auto;
+}
+
+.footer-address {
+  display: block;
+
+  margin-bottom: 29px;
+
+  color: var(--white);
+
+  font-weight: 400;
+}
+
+.contacts-block:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.contacts-social {
+  margin-right: 54px;
+  padding-top: 8px;
+
+  list-style: none;
+}
+
+.social-link {
+  display: block;
+
+  height: 25px;
+  margin-bottom: 20px;
+
+  color: var(--mustard);
+
+  line-height: 24px;
+}
+
+.social-network_img {
+  display: block;
+
+  width: 25px;
+
+  transition: opacity .1s linear;
+
+  opacity: 0.6;
+}
+
+.social-network_img:hover {
+  transition: opacity .1s linear;
+
+  opacity: 1;
+}

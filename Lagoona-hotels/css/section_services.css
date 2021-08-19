@@ -1,0 +1,61 @@
+.section_services {
+  margin-bottom: 69px;
+}
+
+.services-item {
+  min-height: 325px;
+  padding: 200px 45px 25px 45px;
+  /*padding-и ограничивают содержащийся в родительском элементе
+  контент и не дают ему вылезти за границу родителя*/
+
+  border-radius: 12px;
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-position:  top center;
+  background-size: contain;
+
+  line-height: 28px;
+}
+
+.services-item_col:nth-last-child(n + 3) {
+  margin-bottom: 24px;
+}
+
+.services-item_text {
+  width: 84%;
+
+  color: var(--grey);
+
+  line-height: 33px;
+}
+
+.services-item_link {
+  position: relative;
+
+  padding-right: 20px;
+
+  color: var(--mustard-title);
+
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.section_container {
+  list-style: none;
+}
+
+.services-item_exclusive-service {
+  background-image: url('../img/services/exclusive-service.jpg');
+}
+
+.services-item_banquet-hall-rental {
+  background-image: url('../img/services/banquet-hall-rental.jpg');
+}
+
+.services-item_recreation {
+  background-image: url('../img/services/recreation.jpg');
+}
+
+.services-item_car-parks {
+  background-image: url('../img/services/car-parks.jpg');
+}

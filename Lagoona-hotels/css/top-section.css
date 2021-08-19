@@ -1,0 +1,130 @@
+.first-section {
+  margin-bottom: 70px;
+}
+
+.section-block {
+  height: 540px;
+}
+
+.first-section_form {
+  width: 520px;
+}
+
+.section_special-offers {
+  margin-left: -54px;
+}
+
+.first-slider_slide {
+  position: relative;
+
+  display: none;
+
+  height: 100%;
+  padding: 265px 190px 0 40px;
+
+  border-radius: 12px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.first-slider_slide1 {
+  background-image: url('../img/main/bg-1.jpg');
+}
+
+.first-slider_slide2 {
+  background-image: url('../img/main/bg-2.jpg');
+}
+
+.first-slider_slide3 {
+  background-image: url('../img/main/bg-3.jpg');
+}
+
+.slide-title {
+  margin-bottom: 33px;
+
+  color: var(--white);
+
+  font-size: 66px;
+  font-weight: 700;
+  line-height: 58px;
+}
+
+.slide-price {
+  margin-right: 38px;
+
+  color: #baada6;
+
+  font-size: 35px;
+  line-height: 1;
+}
+
+.slide-more {
+  padding-right: 15px;
+
+  transition: filter .1s linear;
+
+  color: var(--mustard-link);
+}
+
+.slide-more:hover  {
+  transition: filter .1s linear;
+
+  filter: drop-shadow(0 0 10px #ffcc66) brightness(107%);
+}
+
+.arrow::after {
+  display: inline-block;
+
+  height: 16px;
+  padding-left: 21px;
+
+  content: '';
+
+  background-image: url('../img/icons/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: contain;
+}
+
+.arrow:hover::after, .arrow:focus::after {
+  transition: transform .1s linear;
+  transform: translateX(20px);
+}
+
+.arrow-2::after {
+  display: inline-block;
+
+  height: 16px;
+  padding-left: 22px;
+
+  content: '';
+
+  background-image: url('../img/icons/arrow-2.svg');
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: contain;
+}
+
+.arrow-2:hover::after, .arrow-2:focus::after {
+  transition: transform .1s linear;
+  transform: translateX(15px);
+}
+
+.active {
+  display: block;
+}
+
+.first-form_offers {
+  display: inline;
+
+  color: var(--light-grey);
+}
+
+.ineractive-number {
+  color: var(--mustard);
+}
+
+.slide-more::after {
+  margin-bottom: -3px;
+  padding-left: 15px;
+}
