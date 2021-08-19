@@ -1,0 +1,127 @@
+.section_how-we-work {
+  margin-bottom: 100px;
+}
+
+.how-we-work_carousel {
+  padding-top: 45px;
+}
+
+.carousel_steps-list {
+  position: relative;
+
+  display: inline-flex;
+
+  margin-bottom: 47px;
+
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.carousel_steps-item:not(:last-child) {
+  margin-right: 89px;
+}
+
+.carousel_step {
+  display: block;
+
+  transition: color .1s linear;
+
+  background-color: transparent;
+}
+
+.carousel_step:hover, .carousel_step:focus {
+  color: var(--yolk);
+}
+
+.carousel_step:active {
+  color: var(--yolk-saturated);
+}
+
+.step-active {
+  position: relative;
+
+  color: var(--yolk);
+}
+
+.how-we-work_carousel-item {
+  display: none;
+  justify-content: space-between;
+
+  background-repeat: no-repeat;
+  background-position: 100% 12px;
+  background-size: auto 100%;
+}
+
+.work_carousel-item-1 {
+  background-image: url('../img/how-we-work/bg-1.jpg');
+}
+
+.work_carousel-item-2 {
+  background-image: url('../img/how-we-work/bg-2.jpg');
+}
+
+.work_carousel-item-3 {
+  background-image: url('../img/how-we-work/bg-3.jpg');
+}
+
+.work_carousel-item-4 {
+  background-image: url('../img/how-we-work/bg-4.jpg');
+}
+
+.how-we-work_item-active {
+  display: flex;
+}
+
+.carousel-item_inf {
+  width: 900px;
+  padding-right: 130px;
+  padding-left: 3px;
+
+  background-color: var(--white);
+}
+
+.more-list_item-text {
+  margin-bottom: 59px;
+
+  line-height: 32.5px;
+}
+
+.carousel_btn-more {
+  display: inline-block;
+
+  margin-right: 30px;
+  padding: 23px 38px;
+
+  transition: opacity .1s linear;
+
+  color: var(--white);
+  background-color: var(--yolk);
+
+  line-height: 1;
+}
+
+.carousel_btn-more:hover, .carousel_btn-more:focus {
+  opacity: 0.7;
+}
+
+.carousel_btn-more:active {
+  opacity: 1;
+  background-color: var(--yolk-saturated);
+}
+
+.carousel_btn-contract {
+  padding: 22px 36px;
+  display: inline-block;
+
+  transition: color, background-color, 1s linear;
+
+  border: 1px solid var(--dark-color);
+
+  line-height: 1;
+}
+
+.carousel_btn-contract:hover, .carousel_btn-contract:focus, .carousel_btn-contract:active {
+  color: var(--white);
+  background-color: var(--dark-color);
+}
+

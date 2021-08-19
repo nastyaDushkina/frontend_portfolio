@@ -1,0 +1,118 @@
+.section_qwestions {
+  margin-bottom: 94px;
+}
+
+.section_qwestions-list {
+  padding-top: 37px;
+  padding-left: 6px;
+
+  list-style: none;
+}
+
+.section_qwestions-item {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 22px 1px 42px 0;
+
+  border-top: 1px solid var(--grey);
+}
+
+.section_qwestions-item:last-child {
+  border-bottom: 1px solid var(--grey);
+}
+
+.qwestions-item_text {
+  width: 94%;
+  height: max-content;
+  padding-bottom: 40px;
+}
+
+.qwestions-item_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: -webkit-fill-available;
+
+  background-color: transparent;
+}
+
+.qwestions-item_title {
+  display: block;
+
+  margin-right: auto;
+  padding-top: 10px;
+
+  transition: color .1s linear;
+  text-align: left;
+
+  color: var(--dark-color);
+
+  font-size: 23.5px;
+  font-weight: 800;
+}
+
+.special-sign {
+  color: var(--grey);
+}
+
+.qwestions-item_btn-img {
+  flex-shrink: 0;
+
+  margin-left: 50px;
+
+  transition: fill .1s linear;
+}
+
+.qwestions-item_btn:hover .qwestions-item_title {
+  transition: color .1s linear;
+
+  color: var(--yolk);
+}
+
+.qwestions-item_btn:hover {
+ border-top: 1px solid var(--yolk);
+ border-bottom: 1px solid var(--yolk);
+}
+
+.qwestions-item_btn:hover .qwestions_btn-circle {
+  transition: fill .1s linear;
+
+  fill: var(--dark-grey);
+}
+
+.qwestions-item_btn:focus .qwestions-item_title {
+  transition: color .1s linear;
+
+  color: var(--yolk);
+}
+
+.qwestions-item_btn:focus .qwestions_btn-circle {
+  transition: fill .1s linear;
+
+  fill: var(--dark-grey);
+}
+
+.qwestions-item_btn:active .qwestions-item_title {
+  transition: color .1s linear;
+
+  color: var(--yolk);
+}
+
+.qwestions-item_btn:active .qwestions_btn-circle {
+  transition: fill .1s linear;
+
+  fill: var(--dark-grey);
+}
+
+.btn-img_X {
+  transition: 1s linear transform;
+  transform-origin: initial;
+}
+
+.ui-accordion-header-active .btn-img_X {
+  transition: 1s linear transform;
+  transform: rotate(45deg);
+  transform-origin: initial;
+}

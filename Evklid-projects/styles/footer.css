@@ -1,0 +1,213 @@
+.footer {
+  color: var(--grey);
+  background-color: #222222;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 48px;
+  padding-bottom: 65px;
+}
+
+.footer_column-inf {
+  margin-right: 87px;
+}
+
+.column-inf_logo {
+  display: inline-block;
+
+  margin-bottom: -2px;
+}
+
+.footer_reference-links {
+  align-self: center;
+
+  width: 270px;
+  margin-bottom: 100px;
+
+  list-style: none;
+
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 37px;
+}
+
+.column-inf_text {
+  width: 354px;
+  padding-top: 80px;
+
+  transform: translateX(-10px);
+}
+
+.column-inf_social {
+  display: flex;
+
+  list-style: none;
+}
+
+.column-inf_social-item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.footer_social-link {
+  display: inline-block;
+
+  width: 60px;
+  height: 60px;
+
+  transition: opacity .1s linear;
+
+  opacity: 0.6;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.footer_social-link:hover, .footer_social-link:focus, .footer_social-link:active {
+  transition: opacity .1s linear;
+
+  opacity: 1;
+}
+
+.social-link_fb {
+  background-image: url('../img/icons/social/fb.svg');
+}
+
+.social-link_vk {
+  background-image: url('../img/icons/social/vk.svg');
+}
+
+.social-link_inst {
+  background-image: url('../img/icons/social/instagram.svg');
+}
+
+.footer_form-title {
+  margin-bottom: 22px;
+}
+
+.footer_form {
+  align-self: flex-start;
+
+  width: 570px;
+  padding-top: 10px;
+}
+
+.footer_form-field {
+  width: 100%;
+
+  color: var(--white);
+  background-color: var(--smoky-black);
+}
+
+.footer_form-input {
+  height: 60px;
+  margin-bottom: 25px;
+  padding: 14px 24px;
+}
+
+.footer_form-textarea {
+  height: 150px;
+  margin-bottom: 20px;
+  padding: 24px;
+
+  resize: none;
+}
+
+.footer_form-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 16px;
+  line-height: 19.5px;
+}
+
+.footer_form-btn {
+  display: inline-block;
+
+  width: 268px;
+  margin-right: 20px;
+  padding: 23px 38px;
+
+  transition: opacity .1s linear;
+
+  color: var(--white);
+  background-color: var(--yolk);
+
+  font-weight: 600;
+  line-height: 1;
+}
+
+.footer_form-btn:hover, .footer_form-btn:focus, .footer_form-btn:active {
+  opacity: 0.7;
+}
+
+.form-input_checkbox {
+  margin-right: 5px;
+}
+
+.form_checkbox {
+  position: relative;
+}
+
+.form-input_checkbox {
+  position: absolute;
+  top: 20px;
+  left: 8px;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+}
+
+.form-input_checkbox + .footer_form-text {
+  position: relative;
+
+  display: inline-block;
+
+  padding-left: 25px;
+
+  cursor: pointer;
+}
+
+.form-input_checkbox + .footer_form-text::before {
+  position: absolute;
+  top: 2px;
+  left: 5px;
+
+  width: 14px;
+  height: 14px;
+
+  content: '';
+
+  border: 1px solid var(--grey);
+}
+
+.form-input_checkbox:checked + .footer_form-text::after {
+  position: absolute;
+  top: 5px;
+  left: 7px;
+
+  width: 10px;
+  height: 10px;
+
+  content: '';
+
+  background: url('../img/icons/other/agree.svg');
+  background-repeat: no-repeat;
+}
+
+.form_checkbox .form-input_checkbox:focus +  .footer_form-text {
+  border: 2px solid wheat;
+  outline: blanchedalmond;
+}
